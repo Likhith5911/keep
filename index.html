@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif';
+    }
+    html,body{
+      height: 100%;
+      width: 100%;
+    }
+    .main{
+      height: 100%;
+      width: 100%;
+
+      position: relative;
+   
+    }
+    .content h2{
+      font-size: 2.4vw;
+      font-weight: 700;
+    
+    }
+    .content i{
+      font-size:  1.6vw;
+      font-weight: 700;
+      align-items: center;
+      display: none;
+
+    }
+   .content{
+
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 3vw;
+    align-items: center;
+     border: 2px solid #dadada;
+   }
+   nav{
+    align-items: center;
+    display: flex;
+   gap: 4vw;
+   }
+   .cont{
+    height: 90%;
+    width: 100%;
+  
+    display: flex;
+   }
+   .left{
+    height: 100%;
+    width: 55%;
+  
+    padding: 5vw 4vw;
+   }
+   .left h1{
+    font-size: 4.2vw;
+    line-height: 4.5vw;
+   }
+   .left p{
+    line-height: 1.7em;
+    font-size: 1.2ew;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+   }
+   .right{
+    height: 100%;
+    width: 45%;
+  
+   }
+   button{
+    font-size: 1vw;
+    padding: 1.3vw 2.3vw;
+    background-color: rgb(238, 107, 46);
+    color: azure;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+   }
+   @media(max-width:600px){
+    .content{
+      height: 60px;
+      color: black; padding: 0 5w;
+    }
+    .content button{
+     display: none;
+    }
+    .content h2{
+      font-size: 7vw;
+    }
+    .content h4{
+      display: none;
+      font-size: 4vw;
+    }
+    .content i{
+      display: initial;
+      font-size: 4vw;
+    }
+    .cont{
+      height: calc(100%-60px);
+      flex-direction: column;
+    }
+    .left{
+      height: 50%;
+      width: 100%;
+    }
+    .left p{
+      font-size: 3vw;
+      width: 90%;
+    }
+    .right{
+      height: 50%;
+      width: 100%;
+    }
+    .left h1{
+      font-size: 10vw;
+      line-height: 11vw;
+    }
+    .cont button{
+      padding:  2vw 3vw;
+      border: 2px;
+      font-size: 3vw;
+    }
+   }
+  </style>
+</head>
+<body> 
+  <div class="main"> 
+  
+     <div class="content">
+      <h2>The Man Company</h2>
+      <nav>
+        <h4>About</h4>
+        <h4>Services</h4>
+        <h4>Courses</h4>
+        <h4>About Us</h4>
+        <i class="ri-menu-line"></i>
+      </nav>
+     
+    </div>
+    <div class="cont">
+      <div class="left">
+        <h1>Learn from the  <span style="color: rgba(255, 102, 0, 0.866);" >greatest </span>teachers in the country</h1>
+        <p>The great thing about learning is that you never have to stop! There’s no limit as to the amount
+         of knowledge you can obtain. So rip a page from Gandhi’s book and keep on learning while you’re living.</p>
+      
+        <button>Explore Now</button>
+      </div>
+      <div class="right">
+        <img src="./boy.jpg" height="100%" width="100%">
+      </div>
+    </div>
+  </div>
+
+ 
+</body>
+</html>
